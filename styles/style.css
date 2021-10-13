@@ -24,6 +24,12 @@ body {
   z-index: 2;
 }
 
+@media only screen and (max-width: 640px) {
+  .showcase {
+    padding: 10px;
+  }
+}
+
 .showcase .logo {
   position: absolute;
   top: 0;
@@ -32,6 +38,14 @@ body {
   padding: 40px 100px;
   font-size: 30px;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 640px) {
+  .showcase .logo {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
 }
 
 .showcase .logo span {
@@ -58,6 +72,12 @@ body {
   font-size: 40px;
   margin-left: 5px 0;
   font-weight: 500;
+}
+
+@media only screen and (max-width: 640px) {
+  .showcase .profile .title .text-3 {
+    font-size: 30px;
+  }
 }
 
 .showcase .profile .title .text-3 span {
@@ -111,6 +131,13 @@ body {
   width: 600px;
 }
 
+@media only screen and (max-width: 640px) {
+  .showcase .portfolio ul li {
+    margin: 0;
+    width: 300px;
+  }
+}
+
 .showcase .portfolio ul li .category {
   font-size: 20px;
   color: crimson;
@@ -119,6 +146,12 @@ body {
 
 .showcase .portfolio ul li .description {
   display: block;
+}
+
+@media only screen and (max-width: 640px) {
+  .showcase .portfolio ul li .description {
+    font-size: 15px;
+  }
 }
 
 .showcase .portfolio ul li .links {
@@ -167,10 +200,22 @@ body {
   margin-left: 200px;
 }
 
+@media only screen and (max-width: 640px) {
+  .showcase .skills li {
+    margin: 0;
+  }
+}
+
 .showcase .contact {
   position: relative;
   z-index: 4;
   top: 20px;
+}
+
+@media only screen and (max-width: 640px) {
+  .showcase .contact {
+    margin-bottom: 30px;
+  }
 }
 
 .showcase .contact h2 {
@@ -190,6 +235,22 @@ body {
           flex-direction: row;
   width: 65%;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 640px) {
+  .showcase .contact .communicate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+  }
 }
 
 .showcase .contact .communicate .contactSubject {
