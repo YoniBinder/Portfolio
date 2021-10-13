@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.showcase {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  z-index: 2;
+}
+
+.showcase .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  padding: 40px 100px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.showcase .logo span {
+  color: crimson;
+}
+
+.showcase .profile .title {
+  position: relative;
+  z-index: 4;
+  text-align: center;
+}
+
+.showcase .profile .title .text-1 {
+  font-size: 27px;
+}
+
+.showcase .profile .title .text-2 {
+  font-size: 60px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+
+.showcase .profile .title .text-3 {
+  font-size: 40px;
+  margin-left: 5px 0;
+  font-weight: 500;
+}
+
+.showcase .profile .title .text-3 span {
+  color: crimson;
+}
+
+.showcase .profile img {
+  position: relative;
+  z-index: 4;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.7;
+}
+
+.showcase .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #03a9f4;
+  mix-blend-mode: overlay;
+}
+
+.showcase .portfolio {
+  position: relative;
+  z-index: 4;
+  top: 20px;
+}
+
+.showcase .portfolio h2 {
+  text-align: center;
+}
+
+.showcase .portfolio ul li {
+  margin-bottom: 10px;
+  margin-left: 200px;
+  width: 600px;
+}
+
+.showcase .portfolio ul li .category {
+  font-size: 20px;
+  color: crimson;
+  font-weight: 700;
+}
+
+.showcase .portfolio ul li .description {
+  display: block;
+}
+
+.showcase .portfolio ul li .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px auto;
+  width: 300px;
+}
+
+.showcase .portfolio ul li .links a {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  width: 110px;
+  background-color: tomato;
+}
+
+.showcase .portfolio ul li .links a:hover {
+  background-color: limegreen;
+}
+
+.showcase .skills {
+  position: relative;
+  z-index: 4;
+  top: 20px;
+}
+
+.showcase .skills h2 {
+  text-align: center;
+}
+
+.showcase .skills li {
+  margin-left: 200px;
+}
+
+.showcase .contact {
+  position: relative;
+  z-index: 4;
+  top: 20px;
+}
+
+.showcase .contact h2 {
+  text-align: center;
+}
+
+.showcase .contact .communicate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.showcase .contact .communicate .contactSubject {
+  color: crimson;
+  font-size: bold;
+}
+
+.showcase .contact a {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
