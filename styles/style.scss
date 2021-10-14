@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
-@import './vars.scss';
+
+
 $primaryColor:crimson;
 $phone-width: 640px;
 *{
@@ -24,9 +25,7 @@ body{
 
     .logo{
         @media only screen and (max-width: $phone-width) {
-            position:relative;
-            top:0;
-            left:0;
+            display: none;
         }
     position:absolute;
     top:0;
