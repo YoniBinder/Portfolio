@@ -126,6 +126,12 @@ body{
                     display: block;
                     
                 }
+                .technologies{
+                    color:yellowgreen;
+                }
+                .git{
+                    color:lightcoral;
+                }
                 .links{
                     display: flex;
                     align-items: center;
@@ -193,7 +199,7 @@ body{
             margin:0 auto;
             .contactSubject{
                 color:$primaryColor;
-                font-size: bold;
+                font-weight: bold;
             }
         }
         a{

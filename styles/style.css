@@ -152,6 +152,14 @@ body {
   }
 }
 
+.showcase .portfolio ul li .technologies {
+  color: yellowgreen;
+}
+
+.showcase .portfolio ul li .git {
+  color: lightcoral;
+}
+
 .showcase .portfolio ul li .links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -253,7 +261,7 @@ body {
 
 .showcase .contact .communicate .contactSubject {
   color: crimson;
-  font-size: bold;
+  font-weight: bold;
 }
 
 .showcase .contact a {
