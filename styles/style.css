@@ -157,7 +157,35 @@ body {
 }
 
 .showcase .portfolio ul li .git {
-  color: lightcoral;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px auto;
+  width: 300px;
+}
+
+.showcase .portfolio ul li .git a {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  width: 130px;
+  background-color: lightcoral;
+}
+
+.showcase .portfolio ul li .git a:hover {
+  background-color: limegreen;
 }
 
 .showcase .portfolio ul li .links {
