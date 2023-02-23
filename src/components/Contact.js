@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import emailjs from "emailjs-com";
+// import emailjs from "emailjs-com";
 
 export default function Contact() {
   const [name, setName] = React.useState("");
@@ -7,39 +7,19 @@ export default function Contact() {
   const [message, setMessage] = React.useState("");
   const form = useRef()
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-    emailjs.sendForm(
-      process.env.REACT_APP_SERVICE_ID,
-      process.env.REACT_APP_TEMPLATE_ID,
-      form.current,
-      process.env.REACT_APP_USER_ID
-    ).then(
-      result =>console.log(result.text),
-      error =>console.log(error.text)
-    )
-    e.target.reset();
-    }
-
-
-  // function encode(data) {
-  //   return Object.keys(data)
-  //     .map(
-  //       (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-  //     )
-  //     .join("&");
-  // }
-
-  // function handleSubmit(e) {
+  // const sendEmail = (e) => {
   //   e.preventDefault();
-  //   fetch("/", {
-  //     method: "POST",
-  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-  //     body: encode({ "form-name": "test", name, email, message }),
-  //   })
-  //     .then(() => alert("Message sent!"))
-  //     .catch((error) => alert(error));
-  // }
+  //   emailjs.sendForm(
+  //     process.env.REACT_APP_SERVICE_ID,
+  //     process.env.REACT_APP_TEMPLATE_ID,
+  //     form.current,
+  //     process.env.REACT_APP_USER_ID
+  //   ).then(
+  //     result =>console.log(result.text),
+  //     error =>console.log(error.text)
+  //   )
+  //   e.target.reset();
+  //   }
 
   return (
     <section id="contact" className="relative">
@@ -82,7 +62,7 @@ export default function Contact() {
         </div>
         <form
           ref={form}
-          onSubmit={sendEmail}
+          // onSubmit={sendEmail}
           className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
           <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font">
             Hire Me
